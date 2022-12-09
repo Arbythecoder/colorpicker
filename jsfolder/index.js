@@ -1,23 +1,22 @@
-// selcting the DOM elements
 const colors = [
   "green",
   "red",
-  "blue",
   "yellow",
-  "pink",
+  "blue",
   "rgba(133,122,200)",
   "#f15025",
 ];
-const myClick = document.getElementById("click");
-const myColor = document.querySelector(".collar");
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
 
-myClick.addEventListener("click", function () {
+btn.addEventListener("click", function () {
   const randomNumber = getRandomNumber();
-  console.log(randomNumber);
+  // console.log(randomNumber);
 
   document.body.style.backgroundColor = colors[randomNumber];
-  myColor.textContent = colors[randomNumber];
+  color.textContent = colors[randomNumber];
 });
+
 function getRandomNumber() {
   return Math.floor(Math.random() * colors.length);
 }

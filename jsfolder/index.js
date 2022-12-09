@@ -2,6 +2,7 @@
 const colors = [
   "green",
   "red",
+  "blue",
   "yellow",
   "pink",
   "rgba(133,122,200)",
